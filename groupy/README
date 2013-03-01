@@ -1,0 +1,15 @@
+MULTICASTING COMMUNICATION:
+The basic algorithm works as follows
+• We have a leader node (we choose the one that created first) who is
+responsible to multicast the messages he receives and send them to
+all the other nodes of the group. He also receives requests for new
+members and adds them to the group.
+• We have slave nodes that receive messages from their application layer
+and forward them to the leader, in order to forward to all group. The
+slave can also receive a request from a new node to join the group
+and that request is also forwarded to the leader. Slaves also receive
+messages and views from leader and forward them to their application
+layer.
+We test the program representing each process with a window. We make
+the windows change colour in a random time and they should be sychronized
+in order to correctly simulate our system.
